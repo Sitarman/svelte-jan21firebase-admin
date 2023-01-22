@@ -13,7 +13,7 @@ function makeApp() {
 
 	return initializeApp({
 		credential: cert({
-			privateKey: FIREBASE_ADMIN_PRIVATE_KEY.replace(/\\n/g, '\n'),
+			privateKey: FIREBASE_ADMIN_PRIVATE_KEY,
 			clientEmail: FIREBASE_ADMIN_CLIENT_EMAIL,
 			projectId: PUBLIC_FIREBASE_PROJECT_ID
 		}),
