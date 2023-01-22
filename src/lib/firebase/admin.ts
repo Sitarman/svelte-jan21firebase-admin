@@ -17,7 +17,7 @@ function makeApp() {
 			clientEmail: FIREBASE_ADMIN_CLIENT_EMAIL,
 			projectId: PUBLIC_FIREBASE_PROJECT_ID
 		}),
-		databaseURL: `https://${PUBLIC_FIREBASE_DATABASEURL}`
+		databaseURL: `https://${PUBLIC_FIREBASE_DATABASEURL}.firebasedatabase.app`
 
 	});
 }
