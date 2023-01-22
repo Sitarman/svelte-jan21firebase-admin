@@ -2,7 +2,7 @@
 	import { user } from '$lib/stores/auth';
 	import { page } from '$app/stores';
 	import { auth } from '$lib/firebase/client';
-    import {signInWithEmailAndPassword } from 'firebase/auth';
+  import {signInWithEmailAndPassword } from 'firebase/auth';
     
     
         let email = '';

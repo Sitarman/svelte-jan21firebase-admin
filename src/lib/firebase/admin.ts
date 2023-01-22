@@ -1,5 +1,5 @@
 import { FIREBASE_ADMIN_CLIENT_EMAIL, FIREBASE_ADMIN_PRIVATE_KEY } from '$env/static/private';
-import { PUBLIC_FIREBASE_PROJECT_ID } from '$env/static/public';
+import { PUBLIC_FIREBASE_PROJECT_ID, PUBLIC_FIREBASE_DATABASEURL } from '$env/static/public';
 import { cert, getApps, initializeApp } from 'firebase-admin/app';
 import { getAuth } from 'firebase-admin/auth';
 import { getFirestore } from 'firebase-admin/firestore';
@@ -17,7 +17,7 @@ function makeApp() {
 			clientEmail: FIREBASE_ADMIN_CLIENT_EMAIL,
 			projectId: PUBLIC_FIREBASE_PROJECT_ID
 		}),
-		databaseURL: `https://${PUBLIC_FIREBASE_PROJECT_ID}.firebaseio.com`
+		databaseURL: `https://${PUBLIC_FIREBASE_DATABASEURL}`
 
 	});
 }
